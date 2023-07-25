@@ -11,7 +11,7 @@ data_url='https://raw.githubusercontent.com/ormarketing/OD/master/OD.csv'
 df = pd.read_csv(data_url)#read the dataset
 df
 
-#Q3.1
+#Part 1
 #Creating separate matrices for male and female
 f = matrix(df)[0:8,2:]
 m = matrix(df)[8:,2:]
@@ -51,7 +51,7 @@ l.sort()
 print("The matched pairs are:")
 l
 
-#Q3.2
+#Part 2
 f = matrix(df)[0:8,2:]
 m = matrix(df)[8:,2:]
 x = cvx.Variable((8,8),boolean = True)
